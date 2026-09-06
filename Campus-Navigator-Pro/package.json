@@ -1,11 +1,12 @@
 {
   "name": "campus-navigator-pro",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
+    "typecheck": "tsc -b --noEmit",
     "preview": "vite preview",
     "mobile:build": "npm run build && npx cap sync android && cd android && ./gradlew assembleDebug"
   },
